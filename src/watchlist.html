@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watchlist</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    .menu-logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .menu-buttons button {
+      background-color: #e50914;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    #watchlist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  #watchlist li {
+    width: calc(20% - 15px); 
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+    .poster img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-details {
+      padding: 20px;
+    }
+
+    .movie-details h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .movie-details a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .movie-actions {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .movie-actions label {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    .movie-actions select {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .movie-actions button {
+      background-color: #e50914;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .watch-status {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    #backButton {
+      background-color: #e50914;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="menu">
+      <div class="menu-logo" onclick="window.location.href = 'index.html'">adameyMubiii</div>
+      <div class="menu-buttons">
+        <button onclick="window.location.href = 'watchlist.html'">Watchlist</button>
+      </div>
+    </div>
+    <h1>Watchlist</h1>
+  
+    <ul id="watchlist"></ul>
+    <br>
+    <button id="backButton">Back</button>
+  
+    <script src="watchlist.js"></script>
+</body>
+</html>
+  

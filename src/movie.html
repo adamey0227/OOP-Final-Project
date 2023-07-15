@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Details</title>
+  <style>
+    
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #e50914;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.movie-container {
+  display: flex;
+  align-items: top;
+  margin-top: 20px;
+}
+
+#moviePoster img {
+  border-radius: 8px;
+}
+
+.movie-details {
+  margin-left: 20px;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  margin:  10px 10px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #b2070a;
+}
+
+  </style>
+
+</head>
+<body>
+  <h1>Movie Details</h1>
+
+  <div class="movie-container">
+    <div id="moviePoster"></div>
+    <div id="movieDetails" class="movie-details"></div>
+  </div>
+
+  <button id="addToWatchlistButton" disabled>Add to Watchlist</button>
+
+  <button id="backButton">Back</button>
+
+  <script src="movie.js"></script>
+
+</body>
+</html>
